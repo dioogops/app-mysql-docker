@@ -1,4 +1,4 @@
-# FastAPI + MySQL 1
+# FastAPI + MySQL 2
 
 API REST construída com FastAPI e MySQL, com virtual environment isolado.
 

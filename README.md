@@ -155,7 +155,7 @@ As tabelas são criadas automaticamente no startup da aplicação via SQLAlchemy
 **Listar todos os usuários via curl:**
 
 ```bash
-curl -s http://localhost:8000/api/v1/users | python3 -m json.tool
+curl -s http://localhost:8000/api/v1/users/ | python3 -m json.tool
 ```
 
 **Listar diretamente no MySQL** (via container):
@@ -255,7 +255,7 @@ GET /api/v1/users?skip=0&limit=10
 **Exemplo com curl:**
 
 ```bash
-curl -s "http://localhost:8000/api/v1/users?skip=0&limit=10"
+curl -s "http://localhost:8000/api/v1/users/?skip=0&limit=10"
 ```
 
 **Resposta de sucesso — `200 OK`:**
@@ -347,7 +347,7 @@ Content-Type: application/json
 **Exemplo com curl:**
 
 ```bash
-curl -s -X POST http://localhost:8000/api/v1/users \
+curl -s -X POST http://localhost:8000/api/v1/users/ \
   -H "Content-Type: application/json" \
   -d '{"name": "João Souza", "email": "joao@email.com"}'
 ```
